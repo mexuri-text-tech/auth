@@ -1,0 +1,33 @@
+// _variables.scss
+$primary-color: #3498db;
+$text-color: #333;
+$bg-color: #fff;
+$hover-color: #2980b9;
+$error-color: #e74c3c;
+$success-color: #2ecc71;
+$border-color: #ddd;
+$mobile-breakpoint: 768px;
+$container-width: 1200px;
+$spacing-unit: 1rem;
+$border-radius: 4px;
+
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Additional specific styles if needed
+.terms-agreement {
+  margin: $spacing-unit 0;
+  font-size: 0.9rem;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

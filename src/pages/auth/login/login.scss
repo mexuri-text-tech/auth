@@ -1,0 +1,134 @@
+// _variables.scss
+$primary-color: #3498db;
+$text-color: #333;
+$bg-color: #fff;
+$hover-color: #2980b9;
+$error-color: #e74c3c;
+$success-color: #2ecc71;
+$border-color: #ddd;
+$mobile-breakpoint: 768px;
+$container-width: 1200px;
+$spacing-unit: 1rem;
+$border-radius: 4px;
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing-unit * 2;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: $spacing-unit * 2;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: $spacing-unit * 2;
+    }
+}
+
+.form-group {
+    margin-bottom: $spacing-unit * 1.5;
+
+    label {
+        display: block;
+        margin-bottom: $spacing-unit / 2;
+        font-weight: 500;
+    }
+
+    input {
+        width: 100%;
+        padding: $spacing-unit;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        font-size: 1rem;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+        }
+    }
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-unit * 2;
+
+    .remember-me {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: $spacing-unit / 2;
+        }
+    }
+
+    .forgot-password {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.btn {
+    padding: $spacing-unit;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &-primary {
+        background-color: $primary-color;
+        color: white;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+
+    &-block {
+        display: block;
+        width: 100%;
+    }
+}
+
+.auth-footer {
+    margin-top: $spacing-unit * 2;
+    text-align: center;
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .auth-card {
+        padding: $spacing-unit;
+        border: none;
+        box-shadow: none;
+    }
+}
