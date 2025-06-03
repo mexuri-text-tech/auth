@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './forgot.css';
 
 const ForgotPasswordPage = () => {
@@ -41,7 +42,7 @@ const ForgotPasswordPage = () => {
                         </>
                     )}
                     <div className="auth-footer">
-                        <p>Remember your password? <a href="/auth/login">Login</a></p>
+                        <p>Remember your password? <Link to="/auth/login">Login</Link></p>
                     </div>
                 </div>
             </main>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './otp.css';
+import { Link } from 'react-router-dom';
 
 const OTPPage = () => {
     const [otp, setOtp] = useState(['', '', '', '']);
@@ -56,7 +57,7 @@ const OTPPage = () => {
                                 </button>
                             </form>
                             <div className="resend-code">
-                                <p>Didn't receive a code? <a href="#">Resend</a></p>
+                                <p>Didn't receive a code? <Link to="#">Resend</Link></p>
                             </div>
                         </>
                     )}
