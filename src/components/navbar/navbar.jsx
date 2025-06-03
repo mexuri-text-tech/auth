@@ -29,13 +29,13 @@ const Navbar = () => {
                 {/* Navigation Links */}
                 <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
                     <li className="navbar-item">
-                        <a href="/" className="navbar-link">Home</a>
+                        <a href="/auth" className="navbar-link">Home</a>
                     </li>
                     <li className="navbar-item">
-                        <a href="/login" className="navbar-link">Login</a>
+                        <a href="/auth/login" className="navbar-link">Login</a>
                     </li>
                     <li className="navbar-item">
-                        <a href="/signup" className="navbar-link">Sign up</a>
+                        <a href="/auth/signup" className="navbar-link">Sign up</a>
                     </li>
                 </ul>
             </div>
