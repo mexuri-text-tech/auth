@@ -41,7 +41,7 @@ const ForgotPasswordPage = () => {
                         </>
                     )}
                     <div className="auth-footer">
-                        <p>Remember your password? <a href="/login">Login</a></p>
+                        <p>Remember your password? <a href="/auth/login">Login</a></p>
                     </div>
                 </div>
             </main>

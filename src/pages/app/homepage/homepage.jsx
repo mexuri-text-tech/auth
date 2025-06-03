@@ -10,8 +10,8 @@ const HomePage = () => {
                     <h1>Welcome to Our Platform</h1>
                     <p>Discover amazing features that will help you grow</p>
                     <div className="cta-buttons">
-                        <Link to="/login" className="btn btn-primary">Login</Link>
-                        <Link to="/signup" className="btn btn-outline">Sign Up</Link>
+                        <Link to="/auth/login" className="btn btn-primary">Login</Link>
+                        <Link to="/auth/signup" className="btn btn-outline">Sign Up</Link>
                     </div>
                 </section>
 

@@ -15,17 +15,17 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' index element={<HomePage />} />
+          <Route path='/auth' index element={<HomePage />} />
 
-          <Route path='/login' element={<LoginPage />} />
+          <Route path='/auth/login' element={<LoginPage />} />
 
-          <Route path='/signup' element={<SignUpPage />} />
+          <Route path='/auth/signup' element={<SignUpPage />} />
 
-          <Route path='/forgot-password' element={<ForgotPasswordPage />} />
+          <Route path='/auth/forgot-password' element={<ForgotPasswordPage />} />
 
-          <Route path='/otp-page' element={<OTPPage />} />
+          <Route path='/auth/otp-page' element={<OTPPage />} />
 
-          <Route path='/profile' element={<ProfilePage />} />
+          <Route path='/auth/profile' element={<ProfilePage />} />
         </Routes>
       </Router>
     </>
